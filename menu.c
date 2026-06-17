@@ -3,7 +3,7 @@ int main()
 {
     char choice,ch;
     printf("Welcome to our Restaurant!\n");
-    printf("Please select a item from menu:\n");
+    printf("Please select a item from the menu:\n");
     printf("1. Starter\n2. Main Course\n3. Dessert\n4. Excit\n");
     scanf("%c", &choice);
 

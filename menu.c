@@ -1,21 +1,22 @@
 #include <stdio.h>
 int main()
 {
-    char choice,ch;
+    char choice;
+    do
+    {
     printf("Welcome to our Restaurant!\n");
     printf("Please select a item from the menu:\n");
-    printf("1. Starter\n2. Main Course\n3. Dessert\n4. Excit\n");
+    printf("1. Starter\n2. Main Course\n3. Dessert\n4. Exit\n");
     scanf("%c", &choice);
-//hi
-//how are you
+
     switch(choice)
     {
         case '1':
         printf("You have selected Starter.\n");
         printf("Please select a Starter:\n");
-        printf("1. Salad\n2. Soup\n3. Paneer pakkoda\n4. Peri Peri Chicken\n");
-        scanf(" %c", &ch);
-        switch(ch)
+        printf("1. Salad\n2. Soup\n3. Paneer pakkoda\n4. Peri Peri Chicken\n5. Back to Main Menu\n");
+        scanf(" %c", &choice);
+        switch(choice)
         {
             case '1':
             printf("You have selected Salad.\n");
@@ -33,6 +34,10 @@ int main()
             printf("You have selected Peri Peri Chicken.\n");
             break;
             
+            case '5':
+            printf("Returning to Main Menu.\n");
+            break;
+
             default:
             printf("Invalid choice! Please select a valid menu item.\n");
         }
@@ -40,9 +45,9 @@ int main()
         case '2':
         printf("You have selected Main Course.\n");
         printf("Please select a Main Course:\n");
-        printf("1. Chicken Biriyani\n2. Mutton Biriyani\n3. Veg Biriyani\n4. Egg Biriyani\n");
-        scanf(" %c", &ch);
-        switch(ch)
+        printf("1. Chicken Biriyani\n2. Mutton Biriyani\n3. Veg Biriyani\n4. Egg Biriyani\n5. Back to Main Menu\n");
+        scanf(" %c", &choice);
+        switch(choice)
         {
             case '1':
             printf("You have selected Chicken Biriyani.\n");
@@ -60,6 +65,10 @@ int main()
             printf("You have selected Egg Biriyani.\n");
             break;
             
+            case '5':
+            printf("Returning to Main Menu.\n");
+            break;
+
             default:
             printf("Invalid choice! Please select a valid menu item.\n");
         }
@@ -67,9 +76,9 @@ int main()
         case '3':
         printf("You have selected Dessert.\n");
         printf("Please select a Dessert:\n");
-        printf("1. Ice Cream\n2. Lava cake\n3. Milk shakes\n4. Ice Cake\n");
-        scanf(" %c", &ch);
-        switch(ch)
+        printf("1. Ice Cream\n2. Lava cake\n3. Milk shakes\n4. Ice Cake\n5. Back to Main Menu\n");
+        scanf(" %c", &choice);
+        switch(choice)
         {
             case '1':
             printf("You have selected Ice Cream.\n");
@@ -86,6 +95,10 @@ int main()
             case '4':
             printf("You have selected Ice Cake.\n");
             break;
+            
+            case '5':
+            printf("Returning to Main Menu.\n");
+            break;
 
             default:
             printf("Invalid choice! Please select a valid menu item.\n");
@@ -98,4 +111,8 @@ int main()
         default:
         printf("Invalid choice! Please select a valid menu item.\n");
     }
+}while(choice != '4');
+    
+    return 0;
+
 }

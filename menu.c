@@ -4,17 +4,28 @@ int main()
     char choice;
     do
     {
-    printf("Welcome to our Restaurant!\n");
-    printf("Please select a item from the menu:\n");
-    printf("1. Starter\n2. Main Course\n3. Dessert\n4. Exit\n");
-    scanf("%c", &choice);
+        printf("\n==================================================\n");
+        printf("          WELCOME TO SWETHA's RESTAURANT\n");
+        printf("==================================================\n");
+        printf("| 1. Starter                                     |\n");
+        printf("| 2. Main Course                                 |\n");
+        printf("| 3. Dessert                                     |\n");
+        printf("| 4. Exit                                        |\n");
+        printf("==================================================\n");
+        printf("Enter your choice: ");
+        scanf(" %c", &choice);
 
     switch(choice)
     {
         case '1':
-        printf("You have selected Starter.\n");
-        printf("Please select a Starter:\n");
-        printf("1. Salad\n2. Soup\n3. Paneer pakkoda\n4. Peri Peri Chicken\n5. Back to Main Menu\n");
+        printf("\n--------------- STARTER MENU ----------------\n");
+        printf("1. Salad               Rs.120\n");
+        printf("2. Soup                Rs.150\n");
+        printf("3. Paneer Pakoda       Rs.180\n");
+        printf("4. Peri Peri Chicken   Rs.280\n");
+        printf("5. Back to main menu\n");
+        printf("---------------------------------------------\n");
+        printf("Enter your choice: ");
         scanf(" %c", &choice);
         switch(choice)
         {
@@ -43,9 +54,14 @@ int main()
         }
         break;
         case '2':
-        printf("You have selected Main Course.\n");
-        printf("Please select a Main Course:\n");
-        printf("1. Chicken Biriyani\n2. Mutton Biriyani\n3. Veg Biriyani\n4. Egg Biriyani\n5. Back to Main Menu\n");
+        printf("\n------------- MAIN COURSE MENU --------------\n");
+        printf("1. Chicken Biriyani    Rs.250\n");
+        printf("2. Mutton Biriyani     Rs.320\n");
+        printf("3. Veg Biriyani        Rs.180\n");
+        printf("4. Egg Biriyani        Rs.200\n");
+        printf("5. Back to main menu\n");
+        printf("---------------------------------------------\n");
+        printf("Enter your choice: ");
         scanf(" %c", &choice);
         switch(choice)
         {
@@ -74,9 +90,14 @@ int main()
         }
         break;
         case '3':
-        printf("You have selected Dessert.\n");
-        printf("Please select a Dessert:\n");
-        printf("1. Ice Cream\n2. Lava cake\n3. Milk shakes\n4. Ice Cake\n5. Back to Main Menu\n");
+        printf("\n--------------- DESSERT MENU ----------------\n");
+        printf("1. Ice Cream          Rs.80\n");
+        printf("2. Lava Cake          Rs.150\n");
+        printf("3. Milk Shake         Rs.120\n");
+        printf("4. Ice Cake           Rs.180\n");
+        printf("5. Back to main menu\n");
+        printf("---------------------------------------------\n");
+        printf("Enter your choice: ");
         scanf(" %c", &choice);
         switch(choice)
         {
@@ -105,7 +126,10 @@ int main()
         }
         break;
         case '4':
-        printf("Thank you for visiting our restaurant! Have a great day!\n");
+        printf("\n=========================================\n");
+        printf(" Thank you for visiting our Restaurant\n");
+        printf("      Have a Delicious Day!\n");
+        printf("=========================================\n");
         break;
 
         default:
